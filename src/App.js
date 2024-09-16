@@ -49,6 +49,8 @@ import Gallery from './pages/Gallery';
 import Alumni from './pages/Alumni';
 import Contact from './pages/Contact';
 import './App.css';  // Import the custom CSS for layout
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 function App() {
   return (

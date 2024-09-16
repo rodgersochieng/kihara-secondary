@@ -1,0 +1,16 @@
+/* Core Values and Facilities Hover Effects */
+.core-value-card:hover, .facility-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .bi {
+    transition: color 0.3s ease;
+  }
+  
+  .core-value-card:hover .bi, 
+  .facility-card:hover .bi {
+    color: var(--bs-primary); /* or whichever color you prefer on hover */
+  }
+  
