@@ -1,0 +1,52 @@
+
+  .footer {
+    background-color: #000080; /* Navy blue background */
+    color: #FFFFFF; /* White text */
+    padding: 1rem; /* Adjust padding as needed */
+    text-align: center; /* Center-align text */
+    position: relative;
+    width: 100%;
+  }
+  
+  .footer-content {
+    margin-bottom: 1rem; /* Space between social icons and the next section */
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem; /* Space between social icons and the next section */
+  }
+  
+  .social-icon {
+    color: #FFFFFF; /* White icons */
+    font-size: 1rem; /* Adjust size as needed */
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #007bff; /* Change color on hover to orange */
+  }
+  
+  .footer a {
+    color: #FFFFFF; /* White text for links */
+    text-decoration: none;
+  }
+
+  .footer p{
+    font-size: 0.875rem;
+
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-copyright  {
+    margin-top: 1rem;
+    font-size: 0.875rem; /* Smaller font size for copyright notice */
+  }
+  
+ 
+  
