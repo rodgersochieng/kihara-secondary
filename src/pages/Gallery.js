@@ -11,7 +11,7 @@ const videoContext = require.context('../assets/videos', false, /\.(jpg|jpeg|png
 const photos = imageContext.keys().map(imageContext);
 const videos = videoContext.keys().map(videoContext).map((thumbnail, index) => ({
   thumbnail,
-  url: `https://www.youtube.com/watch?v=video${index + 1}` // Replace with actual video URLs
+  url: `https://youtu.be/mRWHmBIOiMk${index + 1}` // Replace with actual video URLs
 }));
 
 const Gallery = () => {
