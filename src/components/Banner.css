@@ -1,0 +1,53 @@
+/* .banner {
+    background: url('https://unsplash.com/photos/photo-of-popcorn-kernels-PvAAYZx-yf8') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    color: white; */
+
+    
+  /* } */
+  /* src/components/Banner.css */
+.banner {
+  background: url('https://images.unsplash.com/photo-1541503536214-3c7c0a83e0b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyNzM1NTh8MHwxfGFsbHwxfHx8fHx8fHwxNjgwNTg4MjYx&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire container */
+  color: var(--white);
+  padding: 60px 0;
+  text-align: center;
+}
+
+  
+  .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .banner p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .banner .btn-primary {
+    font-size: 1rem;
+  }
+  /* src/components/Banner.css */
+.banner {
+  background-color: var(--navy-blue);
+  color: var(--white);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.banner .btn-light {
+  background-color: var(--white);
+  color: var(--navy-blue);
+}
