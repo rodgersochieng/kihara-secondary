@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Card, Modal, Button } from 'react-bootstrap';
 import './Gallery.css'; // Custom styles for gallery
 import { FaPlay } from 'react-icons/fa'; // Play icon for video
@@ -11,18 +10,32 @@ const videoContext = require.context('../assets/videos', false, /\.(jpg|jpeg|png
 const photos = imageContext.keys().map(imageContext);
 const videos = videoContext.keys().map(videoContext).map((thumbnail, index) => ({
   thumbnail,
-  url: `https://youtu.be/mRWHmBIOiMk${index + 1}` // Replace with actual video URLs
+  url: `https://www.youtube.com/watch?v=video${index + 1}` // Replace with actual video URLs
 }));
 
+// Specific YouTube video slot
+const specificVideo = {
+   // Replace with actual thumbnail
+  url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' // Replace with your specific video URL
+};
+
 const Gallery = () => {
-  const [show, setShow] = React.useState(false);
-  const [modalContent, setModalContent] = React.useState({ type: '', src: '' });
+  const [show, setShow] = useState(false);
+  const [modalContent, setModalContent] = useState({ type: '', src: '' });
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleClose = () => setShow(false);
   const handleShow = (content) => {
     setModalContent(content);
     setShow(true);
   };
+
+  useEffect(() => {
+    const handleScroll = () => setScrollPosition(window.scrollY);
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <Container className="gallery-page py-5">
@@ -34,8 +47,11 @@ const Gallery = () => {
       <Row className="gallery-grid">
         {photos.length > 0 ? photos.map((photo, index) => (
           <Col md={4} sm={6} xs={12} key={index} className="mb-4">
-            <Card onClick={() => handleShow({ type: 'image', src: photo })} className="gallery-item">
+            <Card onClick={() => handleShow({ type: 'image', src: photo })} className={`gallery-item spin-on-scroll ${scrollPosition > 100 ? 'spin' : ''}`}>
               <Card.Img variant="top" src={photo} className="gallery-photo" />
+              <div className="overlay">
+                <div className="overlay-content">View Image</div>
+              </div>
             </Card>
           </Col>
         )) : (
@@ -50,10 +66,13 @@ const Gallery = () => {
       <Row className="gallery-grid">
         {videos.length > 0 ? videos.map((video, index) => (
           <Col md={4} sm={6} xs={12} key={index} className="mb-4">
-            <Card onClick={() => handleShow({ type: 'video', src: video.url })} className="gallery-item">
+            <Card onClick={() => handleShow({ type: 'video', src: video.url })} className={`gallery-item spin-on-scroll ${scrollPosition > 100 ? 'spin' : ''}`}>
               <Card.Img variant="top" src={video.thumbnail} className="gallery-photo" />
               <div className="play-icon">
                 <FaPlay size={30} />
+              </div>
+              <div className="overlay">
+                <div className="overlay-content">Watch Video</div>
               </div>
             </Card>
           </Col>
@@ -62,13 +81,25 @@ const Gallery = () => {
             <p>No videos available</p>
           </Col>
         )}
+        {/* Specific YouTube Video Slot */}
+        <Col md={4} sm={6} xs={12} className="mb-4">
+          <Card onClick={() => handleShow({ type: 'video', src: specificVideo.url })} className={`gallery-item spin-on-scroll ${scrollPosition > 100 ? 'spin' : ''}`}>
+            <Card.Img variant="top" src={specificVideo.thumbnail} className="gallery-photo" />
+            <div className="play-icon">
+              <FaPlay size={30} />
+            </div>
+            <div className="overlay">
+              <div className="overlay-content">Watch Specific Video</div>
+            </div>
+          </Card>
+        </Col>
       </Row>
 
       {/* Modal for viewing images/videos */}
-      <Modal show={show} onHide={handleClose} centered>
+      <Modal show={show} onHide={handleClose} centered size="lg">
         <Modal.Body className="text-center">
           {modalContent.type === 'image' ? (
-            <img src={modalContent.src} alt="Gallery item" className="img-fluid" />
+            <img src={modalContent.src} alt="Gallery item" className="img-fluid modal-image" />
           ) : (
             <iframe
               width="100%"
@@ -90,4 +121,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
