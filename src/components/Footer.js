@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="footer-content">
               <p>Let's Connect</p>
               <div className="social-icons">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <a href="https://www.facebook.com/profile.php?id=100064557555243" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <FaFacebookF />
                 </a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
@@ -28,7 +28,7 @@ const Footer = () => {
               </div>
             </div>
             <p>
-              Made with ❤️ by <a href="https://github.com/lazydev" className="text-white">Lazy Dev</a>
+              Made with ❤️ by <a href="  www.linkedin.com/in/ochieng-o-rodgers" className="text-white">Lazy Dev</a>
             </p>
             <p className="footer-copyright">
               &copy; {new Date().getFullYear()} Kihara Secondary School. All rights reserved.

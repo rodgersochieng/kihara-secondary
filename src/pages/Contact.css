@@ -1,33 +1,60 @@
-#contact-us {
-    padding: 50px 0;
+.contact-page {
+    padding: 2rem;
   }
   
-  .card {
-    border-radius: 10px;
+  .contact-form {
+    background: #f8f9fa; /* Light background for form */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .address-section p {
-    line-height: 1.6;
-    font-size: 16px;
+  .contact-form h2 {
+    margin-bottom: 1rem;
   }
   
-  iframe {
+  .contact-info {
+    padding: 2rem;
+    background: #ffffff; /* White background for contact info */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+  }
+  
+  .contact-info .map-container {
+    margin-top: 1rem;
+  }
+  
+  .contact-info iframe {
     width: 100%;
-    max-width: 400px;
     height: 300px;
     border: 0;
   }
   
+  /* Responsive Design */
   @media (max-width: 768px) {
-    iframe {
-      width: 100%;
+    .contact-form, .contact-info {
+      padding: 1rem;
+    }
+  
+    .contact-info iframe {
       height: 250px;
     }
   }
   
   @media (max-width: 576px) {
-    iframe {
-      width: 100%;
+    .contact-form, .contact-info {
+      padding: 0.5rem;
+    }
+  
+    .contact-info iframe {
       height: 200px;
     }
   }
