@@ -13,4 +13,11 @@
   .facility-card:hover .bi {
     color: var(--bs-primary); /* or whichever color you prefer on hover */
   }
+  .principal-image {
+    width: 100%;
+    max-width: 150px; /* Adjust as needed */
+    height: auto;
+    border-radius: 50%;
+  }
+  
   

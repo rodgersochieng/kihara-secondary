@@ -53,9 +53,10 @@ const AboutUs = () => {
       <Card className="mb-5 border-secondary">
         <Card.Body>
           <Row>
-            <Col md={4}>
-              <Image src="/api/placeholder/150/150" roundedCircle className="mb-3" alt="Principal" />
-            </Col>
+          <Col md={4}>
+              <Image src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="principal-image mb-3" alt="Principal" />
+             </Col>
+
             <Col md={8}>
               <h2 className="text-secondary"><i className="bi bi-chat-quote me-2"></i>Message from the Principal</h2>
               <blockquote className="blockquote">
