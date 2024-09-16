@@ -1,0 +1,30 @@
+.gallery-page {
+    padding: 2rem;
+  }
+  
+  .gallery-grid {
+    gap: 1.5rem;
+  }
+  
+  .gallery-item {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .gallery-photo {
+    width: 100%;
+    height: auto;
+  }
+  
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
