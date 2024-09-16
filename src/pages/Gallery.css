@@ -1,9 +1,5 @@
 /* src/components/Gallery.css */
 
-/* .gallery-page {
-    background-color: #f8f9fa;
-  } */
-  
   .gallery-grid {
     display: flex;
     flex-wrap: wrap;
