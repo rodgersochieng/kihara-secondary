@@ -2,7 +2,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 import './AboutUs.css'; // Custom CSS for hover effects
-
+import { FaMicroscope } from 'react-icons/fa'; // Import the microscope icon
 
 const AboutUs = () => {
   return (
@@ -95,7 +95,7 @@ const AboutUs = () => {
       <h2 className="text-center mb-4 text-primary"><i className="bi bi-building me-2"></i>School Facilities</h2>
       <Row>
         {[
-          { name: 'Science Lab', icon: 'flask', color: 'success', description: 'Our state-of-the-art science labs provide hands-on learning in physics, chemistry, and biology.' },
+          { name: 'Science Lab', icon: < FaMicroscope />, color: 'success', description: 'Our state-of-the-art science labs provide hands-on learning in physics, chemistry, and biology.' },
           { name: 'Computer Lab', icon: 'laptop', color: 'info', description: 'Equipped with modern computers, our lab ensures students stay at the forefront of technology.' },
           { name: 'Library', icon: 'book', color: 'warning', description: 'Our library offers a vast collection of books and resources to support academic research and personal growth.' },
           { name: 'Classrooms', icon: 'pencil-square', color: 'danger', description: 'Our classrooms are designed for interactive learning, fostering a collaborative environment.' }
