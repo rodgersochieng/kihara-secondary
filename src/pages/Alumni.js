@@ -98,17 +98,17 @@ const Alumni = () => {
           <p>Follow us on social media to stay updated with the latest news and connect with fellow alumni:</p>
           <div className="d-flex justify-content-center">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="me-2">
-              <FaFacebookF size={20} color="#4267B2" />
+              <FaFacebookF size={30} color="#4267B2" />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="me-2">
-              <FaTwitter size={20} color="#1DA1F2" />
+              <FaTwitter size={30} color="#1DA1F2" />
             </a>
             
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="me-2">
-              <FaLinkedinIn size={20} color="#0077B5" />
+              <FaLinkedinIn size={30} color="#0077B5" />
             </a>
             <a href="https://wa.me/123456789" target="_blank" rel="noopener noreferrer">
-              <FaWhatsapp size={20} color="#25D366" />
+              <FaWhatsapp size={30} color="#25D366" />
             </a>
           </div>
         </Card.Body>
