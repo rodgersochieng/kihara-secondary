@@ -48,7 +48,7 @@ const Admissions = () => {
       <Row className="justify-content-center mt-5">
         <Col md={4} className="text-center">
           <a 
-            href="https://wa.me/+254 729942447" 
+            href="https://wa.me/+254729942447" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn btn-success mb-3" 
