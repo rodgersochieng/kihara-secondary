@@ -271,12 +271,12 @@ const Academics = () => {
           <p>Our school offers a variety of extracurricular activities to help students develop leadership skills, teamwork, and personal responsibility. These include:</p>
           <Row>
             {[
-              { name: 'Sports', icon: <FaTrophy />, color: 'success', awards: ['Regional Champion 2022', 'Regional Champion 2023'] },
-              { name: 'Science Congress', icon: <FaFlask />, color: 'danger', awards: ['Regional Champion 2021', 'Regional Champion 2022'] },
-              { name: 'Academic Competitions', icon: <FaChartLine />, color: 'secondary', awards: ['Regional Champion 2020', 'Regional Champion 2021'] },
-              { name: 'Music', icon: <FaMusic />, color: 'success', awards: ['Regional Champion 2019', 'Regional Champion 2022'] },
-              { name: 'Drama', icon: <FaFilm />, color: 'danger', awards: ['Regional Champion 2021', 'Regional Champion 2022'] },
-              { name: 'Clubs', icon: <FaUsers />, color: 'secondary', awards: ['Regional Champion 2020', 'Regional Champion 2021'] }
+              { name: 'Sports', icon: <FaTrophy />, color: 'success', awards: ['Regional Champions 2022', 'Regional Champions 2023'] },
+              { name: 'Science Congress', icon: <FaFlask />, color: 'danger', awards: ['Regional Champions 2021', 'Regional Champions 2022'] },
+              { name: 'Academic Competitions', icon: <FaChartLine />, color: 'secondary', awards: ['Regional Champions 2020', 'Regional Champions 2021'] },
+              { name: 'Music', icon: <FaMusic />, color: 'success', awards: ['Regional Champions 2019', 'Regional Champions 2022'] },
+              { name: 'Drama', icon: <FaFilm />, color: 'danger', awards: ['Regional Champiosn 2021', 'Regional Champions 2022'] },
+              { name: 'Clubs', icon: <FaUsers />, color: 'secondary', awards: ['Regional Champions 2020', 'Regional Champions 2021'] }
             ].map((activity, index) => (
               <Col key={index} md={2} sm={4} className="mb-3">
                 <div 
