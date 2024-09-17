@@ -130,7 +130,7 @@ const Academics = () => {
           { name: 'Mathematics', icon: <FaCalculator />, description: 'Our Mathematics department focuses on developing analytical skills and problem-solving techniques.', color: 'primary' },
           { name: 'Languages', icon: <FaBook />, description: 'Our Languages department offers courses in English, Kiswahili, and foreign languages.', color: 'secondary' },
           { name: 'Humanities', icon: <FaGlobe />, description: 'Our Humanities department includes History, Geography, and Religious Studies.', color: 'success' },
-          { name: 'Computer Lab', icon: <FaLaptop />, description: 'Equipped with modern computers, our lab ensures students stay at the forefront of technology.', color: 'primary' },
+          { name: 'Computer Studies', icon: <FaLaptop />, description: 'Equipped with modern computers, our lab ensures students stay at the forefront of technology.', color: 'primary' },
           { name: 'Business Studies', icon: <FaBriefcase />, description: 'Our Business Studies department provides practical and theoretical knowledge about the business world.', color: 'secondary' },
           { name: 'Home Science', icon: <FaHouseUser />, description: 'Our Home Science department equips students with essential life skills including cooking, textiles, and nutrition.', color: 'success' }
         ].map((dept, index) => (
