@@ -129,7 +129,7 @@ import { FaPlay } from 'react-icons/fa'; // Play icon for video
 
 // Import all images and video thumbnails
 const imageContext = require.context('../assets/images', false, /\.(jpg|jpeg|png)$/);
-const videoContext = require.context('../assets/videos', false, /\.(jpg|jpeg|png)$/);
+const videoContext = require.context('../assets/videos', false, /\.(mp4|webm|ogg)$/);
 
 const photos = imageContext.keys().map(imageContext);
 const videos = videoContext.keys().map(videoContext).map((thumbnail, index) => ({
