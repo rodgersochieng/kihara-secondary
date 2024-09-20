@@ -11,7 +11,7 @@ const CustomNavbar = () => {
     <Navbar expand="lg" className="custom-navbar">
       <Container>
         <Navbar.Brand className="brand">
-          <img src="/path-to-your-logo.png" alt="School Logo" className="logo" />
+          <img src="" alt="School Logo" className="logo" />
           <span className="school-name">Kihara Secondary School</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
